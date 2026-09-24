@@ -3,6 +3,8 @@
 set -euo pipefail
 cd "$(dirname "$0")"
 
+export PATH="$HOME/.sp1/bin:$PATH"
+
 cargo build -q --release -p host
 
 echo "==> Running both guests in the SP1 emulator (this takes a while)..."
