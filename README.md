@@ -1,4 +1,4 @@
-# Does removing the EVM interpreter actually make proving cheaper?
+# EVM Tax
 
 Vitalik's [April 2025 proposal](https://ethereum-magicians.org/t/long-term-l1-execution-layer-proposal-replace-the-evm-with-risc-v/23617)
 argues that ZK provers already work by compiling an EVM implementation down to
