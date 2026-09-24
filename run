@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+cd "$(dirname "$0")"
+
+cargo build -q --release -p host
+
+echo "==> Running both guests in the SP1 emulator (this takes a while)..."
+start=$SECONDS
+./target/release/host
+echo "==> Done in $((SECONDS - start))s"
