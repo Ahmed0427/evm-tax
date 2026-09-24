@@ -1,0 +1,11 @@
+[package]
+name = "host"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+sp1-sdk = { version = "6.8.0", features = ["blocking"] }
+fib = { path = "../fib" }
+
+[build-dependencies]
+sp1-build = "6.8.0"
