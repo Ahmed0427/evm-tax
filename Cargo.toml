@@ -1,0 +1,5 @@
+[workspace]
+resolver = "2"
+members = ["fib", "host"]
+# The two guest programs are compiled for RISC-V by sp1-build (see host/build.rs)
+exclude = ["guest-native", "guest-evm"]
