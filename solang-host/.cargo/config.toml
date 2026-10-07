@@ -1,0 +1,3 @@
+# Share evm-tax's build directory, so sp1-sdk is not compiled twice.
+[build]
+target-dir = "../target"
